@@ -1,0 +1,21 @@
+# Java
+*.class
+*.jar
+
+# Build
+target/
+bin/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+db.properties
