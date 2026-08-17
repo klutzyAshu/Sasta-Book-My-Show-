@@ -16,8 +16,10 @@ public class LoginPage {
         JLabel title = new JLabel("Movie ticket booking app ");
         title.setFont(new Font("Arial", Font.BOLD ,30));
 
+
+        JPanel panel= new JPanel();
         panel.add(title);
-        Window.add(panel);
+        window.add(panel);
 
         window.setVisible(true);
     }
