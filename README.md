@@ -1,4 +1,4 @@
-# Sasta-Book-My-Show  FT - movie ticket booking app created in java.
+# Movie ticket booking app created in java.
  
 
 
@@ -11,7 +11,7 @@
 
 ## 🚀 What is it?
 
-**Sasta Book My Show** is a Java-based movie ticket booking application where users can:
+**Movie ticket bookings** is a Java-based movie ticket booking application where users can:
 
 * 🎥 Browse movies
 * 🏢 Select theatres/shows
