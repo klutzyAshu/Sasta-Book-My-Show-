@@ -1,26 +1,49 @@
+import java.awt.FlowLayout;
+import java.awt.BorderLayout;
 import java.awt.Font;
+import java.awt.TextField;
+import java.awt.event.TextEvent;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import javax.swing.JLabel;
 
 public class LoginPage {
 
     public static void main(String[] args) {
+JPanel panel = new JPanel(new BorderLayout());
 
-    JFrame window = new JFrame();
-    window.setTitle("Movie ticket booking app");
-    window.setSize(1920, 1080);
-    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+JLabel titleLabel = new JLabel("Movie Ticket Booking App");
 
-        
-        JLabel title = new JLabel("Movie ticket booking app ");
-        title.setFont(new Font("Arial", Font.BOLD ,30));
+JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+headerPanel.add(titleLabel);
+
+panel.add(headerPanel, BorderLayout.NORTH);
 
 
-        JPanel panel= new JPanel();
-        panel.add(title);
-        window.add(panel);
+// LOGIN AREA
+JPanel loginPanel = new JPanel();
 
-        window.setVisible(true);
+JLabel usernameLabel = new JLabel("Username");
+JTextField usernameField = new JTextField(15);
+
+JLabel passwordLabel = new JLabel("Password");
+JPasswordField passwordField = new JPasswordField(15);
+
+JButton loginButton = new JButton("Login");
+
+loginPanel.add(usernameLabel);
+loginPanel.add(usernameField);
+
+loginPanel.add(passwordLabel);
+loginPanel.add(passwordField);
+
+loginPanel.add(loginButton);
+
+panel.add(loginPanel, BorderLayout.CENTER);
+
     }
 }
